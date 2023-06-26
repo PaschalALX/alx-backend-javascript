@@ -1,7 +1,8 @@
-import createIteratorObject from "./0x00-ES6_basic/100-createIteratorObject";
-
-import createEmployeesObject from './0x00-ES6_basic/11-createEmployeesObject.js';
+import createEmployeesObject from "./0x00-ES6_basic/11-createEmployeesObject.js";
 import createReportObject from './0x00-ES6_basic/12-createReportObject.js';
+import createIteratorObject from './0x00-ES6_basic/100-createIteratorObject.js';
+import iterateThroughObject from './0x00-ES6_basic/101-iterateThroughObject.js';
+
 
 const employees = {
     ...createEmployeesObject('engineering', ['Bob', 'Jane']),
@@ -9,9 +10,6 @@ const employees = {
 };
 
 const report = createReportObject(employees);
-
 const reportWithIterator = createIteratorObject(report);
 
-for (const item of reportWithIterator) {
-    console.log(item);
-}
+console.log(iterateThroughObject(reportWithIterator));
