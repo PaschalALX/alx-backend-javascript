@@ -1,3 +1,3 @@
-import getBudgetForCurrentYear from "./0x00-ES6_basic/8-getBudgetCurrentYear";
+import getSanFranciscoDescription from "./0x00-ES6_basic/6-string-interpolation";
 
-console.log(getBudgetForCurrentYear())
+console.log(getSanFranciscoDescription());
